@@ -2,6 +2,8 @@ import { Routes } from '@angular/router';
 import { UserComponent } from './user/user.component';
 import { SignUpComponent } from './user/sign-up/sign-up.component';
 import { SignInComponent } from './user/sign-in/sign-in.component';
+import { DashboardComponent } from './ui/dashboard/dashboard.component';
+import { UiComponent } from './ui/ui.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
 import { AuthGuard } from './auth/auth.guard';
 
@@ -16,6 +18,15 @@ export const appRoutes: Routes = [
     },
     {
         path: 'userprofile', component: UserProfileComponent,canActivate:[AuthGuard]
+    },
+    {
+        path: 'dashboard', component: DashboardComponent
+    },
+    {
+        path: 'ui', component: UiComponent
+    },
+    {
+        path: 'ui', component: UiComponent
     },
     {
         path: '', redirectTo: '/login', pathMatch: 'full'

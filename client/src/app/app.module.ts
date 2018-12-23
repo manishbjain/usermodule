@@ -16,6 +16,8 @@ import { UserService } from './shared/user.service';
 //other
 import { AuthGuard } from './auth/auth.guard';
 import { AuthInterceptor } from './auth/auth.interceptor';
+import { UiComponent } from './ui/ui.component';
+import { DashboardComponent } from './ui/dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { AuthInterceptor } from './auth/auth.interceptor';
     UserComponent,
     SignUpComponent,
     UserProfileComponent,
-    SignInComponent
+    SignInComponent,
+    UiComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
